@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+}
+
+.days{
+    background-color:rgb(122, 210, 229);
+}
+table td{
+    text-align: center;
+    padding: 8px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.crt{
+    color: red;
+}
+
+.rotate{
+    -webkit-transform: rotate(-90deg);
+}
