@@ -1,0 +1,57 @@
+INSERT INTO Programmers (NAME, DOB, DOJ, SEX, PROF1, PROF2, SALARY)
+VALUES
+    ('Anand', '1966-04-21', '1992-04-21', 'M', 'Pascal', 'Basic', 3200),
+    ('Altaf', '1964-07-02', '1990-11-13', 'M', 'Clipper', 'Cobol', 2800),
+    ('Jagadesh', '1970-10-06', '1994-10-04', 'M', 'Oracle', 'Java', 4100),
+    ('Juliana', '1968-01-31', '1990-04-21', 'F', 'Cobol', 'Dbase', 3000),
+    ('Kamala', '1968-10-30', '1992-01-02', 'F', 'C', 'Dbase', 2900),
+    ('Mary', '1970-06-24', '1991-02-01', 'F', 'C++', 'Oracle', 4500),
+    ('Nelson', '1965-09-11', '1989-10-11', 'M', 'Cobol', 'Dbase', 2500),
+    ('Partick', '1965-11-19', '1990-04-21', 'M', 'Pascal', 'Clipper', 2800),
+    ('Qadir', '1965-08-31', '1993-04-21', 'M', 'Assembly', 'C', 3000),
+    ('Ramesh', '1967-05-03', '1991-02-28', 'M', 'Pascal', 'Dbase', 3200),
+    ('Rebecca', '1967-01-01', '1990-12-01', 'F', 'Basic', 'Cobol', 2500),
+    ('Remitha', '1970-04-19', '1993-04-20', 'F', 'C', 'Assembly', 3600),
+    ('Revathi', '1969-12-02', '1992-01-02', 'F', 'Pascal', 'Basic', 3700),
+    ('Vijaya', '1965-12-14', '1992-05-02', 'F', 'Foxpro', 'C', 3500);
+
+INSERT INTO Studies (NAME, SPACE, COURSE, CCOST)
+VALUES
+    ('Anand', 'SDBT', 'Pgdca', 4500),
+    ('Altaf', 'SSIL', 'Dca', 7200),
+    ('Jagadesh', 'SSIL', 'Dca', 3500),
+    ('Juliana', 'BITS', 'Dca', 22000),
+    ('Kamala', 'SAKTHIDBTECH', 'Dcp', 5000),
+    ('Mary', 'SDBT', 'Pgdca', 4500),
+    ('Nelson', 'SAKTHIDBTECH', 'Dap', 6200),
+    ('Partick', 'SAKTHIDBTECH', 'Dcap', 5200),
+    ('Qadir', 'APPLE', 'Hdcp', 14000),
+    ('Ramesh', 'SDBT', 'Pgdca', 4500),
+    ('Rebecca', 'SSS', 'Dca&p', 11000),
+    ('Remitha', 'MICROSOFT', 'Dcs', 6000),
+    ('Revathi', 'SDBT', 'Dap', 5000),
+    ('Vijaya', 'MICROSOFT', 'Dca', 48000);
+
+
+INSERT INTO Software (Name, Title, Dev_in, Scost, Dcost, Sold)
+VALUES
+    ('ANAND', 'PARASHUTES', 'BASIC', 399.95, 6000, 43),
+    ('ANAND', 'VIDEO THINKING PACK', 'PASCAL', 7500.00, 16000, 9),
+    ('JAGADESH', 'SERIAL LINK UTILITY', 'JAVA', 800.00, 7500, 10),
+    ('JAGADESH', 'SHARES MANAGEMENT', 'ORACLE', 3000.00, 12000, 14),
+    ('JULIANA', 'INVENTORY CONTROL', 'COBOL', 3000.00, 3500, 0),
+    ('KAMALA', 'PARCEL PACKAGE', 'DBASE', 9000.00, 20000, 7),
+    ('MARY', 'FINANCIAL ACC S/W', 'ORACLE', 18000.00, 85000, 4),
+    ('MARY', 'CODE GENERATOR', 'C', 4500.00, 20000, 23),
+    ('MARY', 'READ ME', 'C++', 300.00, 1200, 84),
+    ('PARTICK', 'GRAPHIC EDITOR', 'PASCAL', 750.00, 5000, 11),
+    ('QADIR', 'BOMBS AWAY', 'ASSEMBLY', 499.95, 530, 114),
+    ('QADIR', 'VACCINES', 'C', 1900.00, 3400, 21),
+    ('RAMESH', 'HOTEL MANAGEMENT', 'DBASE', 12000.00, 35000, 4),
+    ('RAMESH', 'DEAD LEE', 'PASCAL', 99.95, 4500, 73),
+    ('REMITTA', 'PC UTILITIES', 'C', 725.00, 5000, 51),
+    ('REMITTA', 'TSR HELP PACKAGE', 'ASSEMBLY', 2500.00, 900, 6),
+    ('REVATHI', 'HOSPITAL MANAGEMENT', 'PASCAL', 1100.00, 75000, 2),
+    ('REVATHI', 'QUIZ MASTER', 'BASIC', 3200.00, 2100, 15),
+    ('VIJAYA', 'ISK EDITOR', 'C', 900.00, 700, 6);
+
