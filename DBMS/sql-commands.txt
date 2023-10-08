@@ -1,3 +1,14 @@
+CREATE TABLE Programmers (
+    NAME VARCHAR(28) NOT NULL,
+    DOB DATE NOT NULL,
+    DOJ DATE NOT NULL,
+    SEX VARCHAR(1) NOT NULL,
+    PROF1 VARCHAR(28),
+    PROF2 VARCHAR(28),
+    SALARY INT(4) NOT NULL
+);
+
+
 INSERT INTO Programmers (NAME, DOB, DOJ, SEX, PROF1, PROF2, SALARY)
 VALUES
     ('Anand', '1966-04-21', '1992-04-21', 'M', 'Pascal', 'Basic', 3200),
@@ -15,6 +26,14 @@ VALUES
     ('Revathi', '1969-12-02', '1992-01-02', 'F', 'Pascal', 'Basic', 3700),
     ('Vijaya', '1965-12-14', '1992-05-02', 'F', 'Foxpro', 'C', 3500);
 
+
+CREATE TABLE Studies (
+    NAME VARCHAR(28) NOT NULL,
+    SPLACE VARCHAR(29) NOT NULL,
+    COURSE VARCHAR(25) NOT NULL,
+    CCOST INT(5) NOT NULL
+);
+
 INSERT INTO Studies (NAME, SPACE, COURSE, CCOST)
 VALUES
     ('Anand', 'SDBT', 'Pgdca', 4500),
@@ -31,6 +50,16 @@ VALUES
     ('Remitha', 'MICROSOFT', 'Dcs', 6000),
     ('Revathi', 'SDBT', 'Dap', 5000),
     ('Vijaya', 'MICROSOFT', 'Dca', 48000);
+
+
+CREATE TABLE Software (
+    NAME VARCHAR(28) NOT NULL,
+    TITLE VARCHAR(30) NOT NULL,
+    DEV_IN VARCHAR(28) NOT NULL,
+    SCOST FLOAT(7,2),
+    DCOST NUMBER(5),
+    SOLD NUMBER(3)
+);
 
 
 INSERT INTO Software (Name, Title, Dev_in, Scost, Dcost, Sold)
