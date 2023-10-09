@@ -5,8 +5,7 @@ int linearSearch(int arr[],int ele,int n,int idx){
 		if(arr[idx]==ele){
 			return idx;
 		}
-		return linearSearch(arr,ele,n,idx+1);		
-		
+		return linearSearch(arr,ele,n,idx+1);			
 	}
 	return -1;	
 }
