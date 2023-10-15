@@ -9,12 +9,6 @@ public class Prog4 {
         Matrix matrix1 = new Matrix(data1);
         Matrix matrix2 = new Matrix(data2);
 
-        System.out.println("Matrix 1:");
-        matrix1.display();
-
-        System.out.println("Matrix 2:");
-        matrix2.display();
-
         Matrix sum = matrix1.add(matrix2);
         System.out.println("Matrix Sum:");
         sum.display();
