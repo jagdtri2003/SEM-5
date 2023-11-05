@@ -34,7 +34,7 @@ CREATE TABLE Studies (
     CCOST INT(5) NOT NULL
 );
 
-INSERT INTO Studies (NAME, SPACE, COURSE, CCOST)
+INSERT INTO Studies (NAME, SPLACE, COURSE, CCOST)
 VALUES
     ('Anand', 'SDBT', 'Pgdca', 4500),
     ('Altaf', 'SSIL', 'Dca', 7200),
@@ -57,8 +57,8 @@ CREATE TABLE Software (
     TITLE VARCHAR(30) NOT NULL,
     DEV_IN VARCHAR(28) NOT NULL,
     SCOST FLOAT(7,2),
-    DCOST NUMBER(5),
-    SOLD NUMBER(3)
+    DCOST INT(5),
+    SOLD INT(3)
 );
 
 
