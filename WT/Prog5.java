@@ -6,7 +6,7 @@ class Demo{
     }
     Demo(int a){
         this();
-        System.out.println("Parametrized Constructor !!");
+        System.out.println("Parameterized Constructor !!");
     }
 }
 

@@ -14,7 +14,7 @@ class test implements A,B {
     }
     public void show2(){
         System.out.println("Show 2");
-    }
+    }   
 }
 
 public class Prog6 {
