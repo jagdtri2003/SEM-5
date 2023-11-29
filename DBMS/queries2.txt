@@ -1,0 +1,123 @@
+1) Display THE NUMBER OF packages developed in EACH language.
+
+      SELECT DEV_IN LANGUAGE,COUNT(TITLE) NO_of_PACK FROM SOFTWARE GROUP BY DEV_IN;
+
+2) Display THE NUMBER OF packages developed by EACH person.
+     
+      SELECT NAME,COUNT(TITLE) No_of_Pack  FROM SOFTWARE GROUP BY NAME;
+
+
+3) Display THE NUMBER OF male and female programmer.
+
+      SELECT SEX,COUNT(NAME) FROM PROGRAMMER GROUP BY SEX;
+
+4) Display THE COSTLIEST packages and HIGEST selling developed in EACH language.
+
+      SELECT DEV_IN,MAX(SCOST),MAX(SOLD) FROM SOFTWARE GROUP BY DEV_IN;
+
+5) Display THE NUMBER OF people BORN in EACH YEAR.
+
+SELECT TO_CHAR(DOB,'YY') AS YEAR,COUNT(NAME) FROM PROGRAMMER GROUP BY TO_CHAR(DOB,'YY');
+
+6) Display THE NUMBER OF people JOINED in EACH YEAR.
+
+SELECT TO_CHAR(DOJ,'YY') AS YEAR,COUNT(NAME) FROM PROGRAMMER GROUP BY TO_CHAR(DOJ,'YY');
+
+7) Display THE NUMBER OF people BORN in EACH MONTH.
+
+      SELECT SUBSTR(DOB,4,3),COUNT(NAME) FROM PROGRAMMER GROUP BY SUBSTR(DOB,4,3);
+
+8) Display THE NUMBER OF people JOINED in EACH MONTH.
+
+      SELECT SUBSTR(DOJ,4,3),COUNT(NAME) FROM PROGRAMMER GROUP BY SUBSTR(DOJ,4,3);
+
+9) Display the language wise COUNTS of prof1.
+
+      SELECT PROF1, COUNT(PROF1) FROM PROGRAMMER GROUP BY PROF1;
+
+10) Display the language wise COUNTS of prof2.
+
+      SELECT PROF2, COUNT(PROF2) FROM PROGRAMMER GROUP BY PROF2;
+
+11) Display THE NUMBER OF people in EACH salary group.
+
+      SELECT SALARY,COUNT(NAME) FROM PROGRAMMER GROUP BY SALARY;
+
+12) Display THE NUMBER OF people who studied in EACH institute.
+
+      SELECT SPLACE,COUNT(NAME) FROM STUDIES GROUP BY SPLACE;
+
+13) Display THE NUMBER OF people who studied in EACH course.
+
+      SELECT COURSE ,COUNT(NAME) FROM STUDIES GROUP BY COURSE;
+
+14) Display the TOTAL development COST of the packages developed in EACH language.
+
+      SELECT DEV_IN LANG,SUM(DCOST) TOTAL_COST FROM SOFTWARE GROUP BY DEV_IN;
+
+15) Display the selling cost of the package developed in EACH language.
+
+      SELECT DEV_IN ,SUM(SCOST) FROM SOFTWAREGROUP BY DEV_IN;
+
+16) Display the cost of the package developed by EACH programmer.
+
+      SELECT NAME,SUM(DCOST) AS TOTAL_COST FROM SOFTWARE GROUP BY NAME;
+
+17) Display the sales values of the package developed in EACH programmer.
+
+      SELECT NAME, SUM(SCOST*SOLD) FROM SOFTWARE GROUP BY NAME;
+
+18) Display the NUMBER of packages developed by EACH programmer.
+
+      SELECT NAME,COUNT(TITLE) AS TOTAL_PACK FROM SOFTWARE GROUP BY NAME;
+
+19) Display the sales COST of packages developed by EACH programmer language wise.
+
+      SELECT DEV_IN, SUM(SCOST) FROM SOFTWARE GROUP BY DEV_IN;
+
+20) Display EACH programmers name,costliest package,cheapest packages developed by His/Her?
+
+      SELECT NAME,MIN(DCOST),MAX(DCOST) FROM SOFTWARE GROUP BY NAME;
+
+21) Display EACH language name with AVERAGE development cost, AVERAGE cost, selling
+cost and AVERAGE price per copy.
+
+      SELECT DEV_IN,AVG(DCOST),AVG(SCOST),AVG(SCOST) FROM SOFTWARE GROUP BY DEV_IN;
+
+22) Display EACH institute name with NUMBER of courses, AVERAGE cost per course.
+
+      SELECT SPLACE,COUNT(COURSE), AVG(CCOST) FROM STUDIES GROUP BY SPLACE;
+
+23) Display EACH institute name with NUMBER of students.
+
+      SELECT SPLACE,COUNT(NAME) FROM STUDIES GROUP BY SPLACE;
+
+24) Display names of male and female programmers.
+
+      SELECT NAME,SEX FROM PROGRAMMER ORDER BY SEX;
+
+25) Display the programmer's name and their packages.
+
+      SELECT NAME,TITLE FROM SOFTWARE ORDER BY NAME;
+
+26) Display the NUMBER of packages in EACH language.
+
+      SELECT COUNT(TITLE),DEV_IN FROM SOFTWARE GROUP BY DEV_IN;
+
+27) Display the NUMBER of packages in EACH language for which development cost is less than
+1000.
+      SELECT COUNT(TITLE),DEV_IN FROM SOFTWARE WHERE DCOST<1000 GROUP BY DEV_IN;
+
+28) Display the AVERAGE difference BETWEEN scost and dcost for EACH language.
+
+      SELECT DEV_IN,AVG(DCOST - SCOST) FROM SOFTWARE GROUP BY DEV_IN;
+
+29) Display the TOTAL scost, dcsot and amount TOBE recovered for EACH programmer for
+whose dcost HAS NOT YET BEEN recovered.
+
+      SELECT SUM(SCOST), SUM(DCOST), SUM(DCOST-(SOLD*SCOST)) FROM SOFTWARE GROUP BY NAME
+HAVING SUM(DCOST)>SUM(SOLD*SCOST);
+
+30) Display highest, lowest and average salaries for THOSE earning MORE than 2000.
+
+      SELECT MAX(SALARY), MIN(SALARY), AVG(SALARY) FROM PROGRAMMER WHERE SALARY > 2000;
