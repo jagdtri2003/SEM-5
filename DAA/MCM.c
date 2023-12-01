@@ -19,6 +19,7 @@ int main(){
 	}
 	for(i=0;i<=n;i++){
 		m[i][i]=0;
+		s[i][i]=0;
 	}
 	for(l=2;l<=n;l++){
 		for(i=1;i<=n-l+1;i++){
@@ -33,7 +34,7 @@ int main(){
 			}	
 		}
 	}
-	for(i=0;i<=n;i++){
+	for(i=1;i<n;i++){
 		for(j=0;j<=n;j++){
 			if (s[i][j]!=-1){
 				printf("%d ",s[i][j]);
